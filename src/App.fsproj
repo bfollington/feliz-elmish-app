@@ -3,7 +3,7 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="simple/Disposer.fs" />
+    <Compile Include="simple/Extensions.fs" />
     <Compile Include="simple/Button.fs" />
     <Compile Include="ElmishInput.fs" />
     <Compile Include="ReducerTimer.fs" />

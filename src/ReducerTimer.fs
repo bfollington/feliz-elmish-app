@@ -2,7 +2,7 @@ module ReducerTimer
 
 open Feliz
 open Fable.Core.JS
-open Disposer
+open Extensions
 open Button
 
 type State = {
