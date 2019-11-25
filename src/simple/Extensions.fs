@@ -15,3 +15,12 @@ module Cmd =
       Async.StartImmediate delayedDispatch
 
     Cmd.ofSub delayedCmd
+
+type Deferred<'t> = 
+  | NotStartedYet
+  | InProgress
+  | Complete of 't
+
+type AsyncOperationEvent<'t> =
+  | Started
+  | Finished of 't
