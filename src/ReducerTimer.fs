@@ -27,7 +27,7 @@ let timer = React.functionComponent("Timer", fun () ->
 
   let subscribeToTimer() =
         let subscriptionId = setInterval (fun _ -> dispatch Tick) 1000
-        disposer (fun () -> clearTimeout(subscriptionId))
+        disposer (fun () -> clearInterval(subscriptionId))
 
   React.useEffect(subscribeToTimer, [| box dispatch |])
 
