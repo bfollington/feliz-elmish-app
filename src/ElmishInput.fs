@@ -4,6 +4,7 @@ open Feliz
 open Elmish
 open Feliz.ElmishComponents
 
+open Stream
 open Button
 
 type State = { input: string }

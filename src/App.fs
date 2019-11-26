@@ -33,4 +33,8 @@ let render (state: State) (dispatch: Msg -> unit) =
         Html.hr []
 
         ElmishInput.elmishInput
+
+        Html.hr []
+
+        button { label = "Test RX"; onClick = (fun _ -> TestStreams.testSubscribe())}
     ]

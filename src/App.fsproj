@@ -3,10 +3,13 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="simple/Fetch.fs" />
+    <Compile Include="simple/Stream.fs" />
     <Compile Include="simple/Extensions.fs" />
     <Compile Include="simple/Button.fs" />
     <Compile Include="ElmishInput.fs" />
     <Compile Include="ReducerTimer.fs" />
+    <Compile Include="TestStreams.fs" />
     <Compile Include="App.fs" />
     <Compile Include="Main.fs" />
   </ItemGroup>
@@ -14,8 +17,10 @@
     <PackageReference Include="Fable.Elmish.Debugger" Version="3.0.3" />
     <PackageReference Include="Fable.Elmish.HMR" Version="4.0.1" />
     <PackageReference Include="Fable.Elmish.React" Version="3.0.1" />
+    <PackageReference Include="Fable.Reaction" Version="3.2.1" />
     <PackageReference Include="Feliz" Version="0.68.2" />
     <PackageReference Include="Feliz.ElmishComponents" Version="0.2.14" />
+    <PackageReference Include="FSharp.Control.Reactive" Version="4.2.0" />
     <PackageReference Include="Zanaptak.TypedCssClasses" Version="0.2.0" />
   </ItemGroup>
 </Project>
